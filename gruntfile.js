@@ -103,6 +103,7 @@ module.exports = grunt => {
 		connect: {
 			server: {
 				options: {
+					hostname: 'localhost',
 					port: port,
 					base: root,
 					livereload: true,
