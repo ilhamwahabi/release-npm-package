@@ -35,23 +35,25 @@
           <h1 class="fragment">Release Your Own NPM Package</h1>
         </section>
         <section>
-          <h1>About Me</h1>
+          <h2>About Me</h2>
           <ul>
-            <li class="fragment">Ilham Wahabi, kru ARC'16</li>
-            <li class="fragment">Mahasiswa Teknik Informatika ITB'16</li>
+            <li class="fragment">Ilham Wahabi</li>
+            <li class="fragment">ARC'16</li>
+            <li class="fragment">Teknik Informatika ITB'16</li>
             <li class="fragment">Front End Developer</li>
             <li class="fragment">ex: eHealth, Dekoruma, Chatbiz, Stoqo</li>
+            <li class="fragment"><span>currently: </span><span class="fragment">nganggur</span></li>
           </ul>
         </section>
         <section>
-          <h1>Prequisites</h1>
+          <h2>Prequisites</h2>
           <ul>
             <li class="fragment">Memahami dasar Git</li>
             <li class="fragment">Familiar dengan NPM</li>
           </ul>
         </section>
         <section>
-          <h1>Get Started</h1>
+          <h2>Get Started</h2>
           <ol>
             <li class="fragment">Install <a href="https://nodejs.org/" target="_blank">Node.js (+ NPM)</a></li>
             <li class="fragment">Buat akun di <a href="https://www.npmjs.com/" target="_blank">NPM</a></li>
@@ -63,7 +65,6 @@
           <ol>
             <li class="fragment"><a href="https://github.com/new" target="_blank">Buat Github repo</a>, init local repo <pre><code class="hljs html">git init</code></pre></li>
             <li class="fragment">Init project <pre><code class="hljs html">npm init</code></pre></li>
-            <li class="fragment">Tambahkan Github remote</li>
             <li class="fragment">Mulai coding, kemudian add -> commit -> push</li>
             <li class="fragment">Publish package <pre><code class="hljs html">npm publish</code></pre></li>
           </ol>
@@ -76,6 +77,15 @@
               <li class="fragment">Update version <pre><code class="hljs html">npm version major / minor / patch</code></pre></li>
               <li class="fragment">Push our code</li>
               <li class="fragment">Publish again <pre><code class="hljs html">npm publish</code></pre></li>
+            </ol>
+          </section>
+          <section>
+            <h2>Add Beta</h2>
+            <ol>
+              <li class="fragment">Update our code, add -> commit</li>
+              <li class="fragment">Change version in package.json <pre><code class="hljs json">"version": "1.2.4-beta.0"</code></pre></li>
+              <li class="fragment">Push our code</li>
+              <li class="fragment">Publish labeled package <pre><code class="hljs html">npm publish --tag beta</code></pre></li>
             </ol>
           </section>
           <section>
@@ -115,7 +125,7 @@
           </section>
         </section>
         <section>
-          <h3>Ok keren, tapi bagaimana dengan...</h3>
+          <h2>Tapi bagaimana dengan...</h2>
           <ol>
             <li class="fragment">Package untuk React, Vue, etc?</li>
             <li class="fragment">Linting? Testing? CI/CD?</li>
