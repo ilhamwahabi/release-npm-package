@@ -1,69 +1,89 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>ARC Weekly Webinar 6</title>
+    <title>ARC Weekly Webinar 6</title>
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/black.css" />
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css" />
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-					<h5 class="fragment">Into Open Source:</h5>
-					<h1 class="fragment">Release Your Own NPM Package</h1>
-				</section>
-				<section>
-					<h1>About Me</h1>
-					<ul>
-						<li class="fragment">Ilham Wahabi, kru ARC'16</li>
-						<li class="fragment">Mahasiswa Teknik Informatika ITB'16</li>
-						<li class="fragment">Front End Developer</li>
-						<li class="fragment">ex: eHealth, Dekoruma, Chatbiz, Stoqo</li>
-					</ul>
-				</section>
-				<section>
-					<h1>Prequisites</h1>
-					<ul>
-						<li class="fragment">Memahami dasar Git</li>
-						<li class="fragment">Familiar dengan package.json</li>
-						<li class="fragment">Pernah menginstall package dari NPM</li>
-					</ul>
-				</section>
-			</div>
-		</div>
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h5>Into Open Source:</h5>
+          <h1 class="fragment">Release Your Own NPM Package</h1>
+        </section>
+        <section>
+          <h1>About Me</h1>
+          <ul>
+            <li class="fragment">Ilham Wahabi, kru ARC'16</li>
+            <li class="fragment">Mahasiswa Teknik Informatika ITB'16</li>
+            <li class="fragment">Front End Developer</li>
+            <li class="fragment">ex: eHealth, Dekoruma, Chatbiz, Stoqo</li>
+          </ul>
+        </section>
+        <section>
+          <h1>Prequisites</h1>
+          <ul>
+            <li class="fragment">Memahami dasar Git</li>
+            <li class="fragment">Familiar dengan NPM</li>
+          </ul>
+        </section>
+        <section>
+          <h1>Get Started</h1>
+          <ol>
+            <li class="fragment">Install <a href="https://nodejs.org/" target="_blank">Node.js (+ NPM)</a></li>
+            <li class="fragment">Buat akun di <a href="https://www.npmjs.com/" target="_blank">NPM</a></li>
+            <li class="fragment">Login NPM di terminal <pre><code class="hljs html">npm adduser</code></pre></li>
+          </ol>
+        </section>
+        <section>
+          <ol>
+            <li class="fragment"><a href="https://github.com/new" target="_blank">Buat Github repo</a>, init local repo <pre><code class="hljs html">git init</code></pre></li>
+            <li class="fragment">Init project <pre><code class="hljs html">npm init</code></pre></li>
+            <li class="fragment">Tambahkan Github remote</li>
+            <li class="fragment">Mulai coding, kemudian add -> commit -> push</li>
+            <li class="fragment">Publish package <pre><code class="hljs html">npm publish</code></pre></li>
+          </ol>
+        </section>
+      </div>
 
-		<script src="js/reveal.js"></script>
+    <script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				hash: true,
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/highlight/highlight.js' },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-		</script>
-	</body>
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        hash: true,
+        dependencies: [
+          { src: "plugin/markdown/marked.js" },
+          { src: "plugin/markdown/markdown.js" },
+          { src: "plugin/highlight/highlight.js" },
+          { src: "plugin/notes/notes.js", async: true },
+        ],
+      });
+    </script>
+  </body>
 </html>
