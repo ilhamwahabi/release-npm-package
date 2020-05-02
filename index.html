@@ -40,7 +40,7 @@
             <li class="fragment">Ilham Wahabi</li>
             <li class="fragment">ARC'16</li>
             <li class="fragment">Teknik Informatika ITB'16</li>
-            <li class="fragment">Front End Developer</li>
+            <li class="fragment">Frontend Developer</li>
             <li class="fragment">ex: eHealth, Dekoruma, Chatbiz, Stoqo</li>
             <li class="fragment"><span>currently: </span><span class="fragment">nganggur</span></li>
           </ul>
@@ -61,13 +61,38 @@
           </ol>
         </section>
         <section>
-          <h2>Publish Package</h2>
-          <ol>
-            <li class="fragment"><a href="https://github.com/new" target="_blank">Buat Github repo</a>, init local repo <pre><code class="hljs html">git init</code></pre></li>
-            <li class="fragment">Init project <pre><code class="hljs html">npm init</code></pre></li>
-            <li class="fragment">Mulai coding, kemudian add -> commit -> push</li>
-            <li class="fragment">Publish package <pre><code class="hljs html">npm publish</code></pre></li>
-          </ol>
+          <section>
+            <h2>Publish Package</h2>
+            <ol>
+              <li class="fragment"><a href="https://github.com/new" target="_blank">Buat Github repo</a>, init local repo <pre><code class="hljs html">git init</code></pre></li>
+              <li class="fragment">Init project <pre><code class="hljs html">npm init</code></pre></li>
+              <li class="fragment">Mulai coding, kemudian add -> commit -> push</li>
+              <li class="fragment">Publish package <pre><code class="hljs html">npm publish</code></pre></li>
+            </ol>
+          </section>
+          <section>
+            <p>
+              <span class="fragment highlight-red">CommonJS</span>
+              <span>vs</span>
+              <span class="fragment highlight-blue">ES Modules</span>
+            </p>
+            <div>
+              <pre class="fragment"><code class="hljs js">
+                /* CommonJS import */
+                const express = require('express')
+                
+                /* CommonJS export */
+                module.exports = {}
+              </code></pre>
+              <pre class="fragment"><code class="hljs js">
+                /* ES Modules import */
+                import express from 'express'
+                
+                /* ES Modules export */
+                export default {}
+              </code></pre>
+            </div>
+          </section>
         </section>
         <section>
           <section>
