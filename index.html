@@ -41,6 +41,11 @@
             <li class="fragment">ARC'16</li>
             <li class="fragment">Teknik Informatika ITB'16</li>
             <li class="fragment">Frontend Developer</li>
+            <li class="fragment">
+              <a href="https://github.com/iwgx" target="_blank">Github</a>
+              &
+              <a href="https://twitter.com/ilhamwahabigx" target="_blank">Twitter</a>
+            </li>
             <li class="fragment">ex: eHealth, Dekoruma, Chatbiz, Stoqo</li>
             <li class="fragment"><span>currently: </span><span class="fragment">nganggur</span></li>
           </ul>
@@ -57,17 +62,18 @@
           <ol>
             <li class="fragment">Install <a href="https://nodejs.org/" target="_blank">Node.js (+ NPM)</a></li>
             <li class="fragment">Buat akun di <a href="https://www.npmjs.com/" target="_blank">NPM</a></li>
-            <li class="fragment">Login NPM di terminal <pre><code class="hljs html">npm adduser</code></pre></li>
+            <li class="fragment">Login NPM di terminal <pre><code class="hljs bash">npm adduser</code></pre></li>
+            <li class="fragment">Recheck (optional)<pre><code class="hljs bash">npm whoami</code></pre></li>
           </ol>
         </section>
         <section>
           <section>
             <h2>Publish Package</h2>
             <ol>
-              <li class="fragment"><a href="https://github.com/new" target="_blank">Buat Github repo</a>, init local repo <pre><code class="hljs html">git init</code></pre></li>
-              <li class="fragment">Init project <pre><code class="hljs html">npm init</code></pre></li>
+              <li class="fragment"><a href="https://github.com/new" target="_blank">Buat Github repo</a>, init local repo <pre><code class="hljs bash">git init</code></pre></li>
+              <li class="fragment">Init project <pre><code class="hljs bash">npm init</code></pre></li>
               <li class="fragment">Mulai coding, kemudian add -> commit -> push</li>
-              <li class="fragment">Publish package <pre><code class="hljs html">npm publish</code></pre></li>
+              <li class="fragment">Publish package <pre><code class="hljs bash">npm publish</code></pre></li>
             </ol>
           </section>
           <section>
@@ -99,9 +105,9 @@
             <h2>Update Package</h2>
             <ol>
               <li class="fragment">Update our code, add -> commit</li>
-              <li class="fragment">Update version <pre><code class="hljs html">npm version major / minor / patch</code></pre></li>
+              <li class="fragment"><a href="#/5/2">Update version</a> <pre><code class="hljs bash">npm version major / minor / patch</code></pre></li>
               <li class="fragment">Push our code</li>
-              <li class="fragment">Publish again <pre><code class="hljs html">npm publish</code></pre></li>
+              <li class="fragment">Publish again <pre><code class="hljs bash">npm publish</code></pre></li>
             </ol>
           </section>
           <section>
@@ -110,7 +116,7 @@
               <li class="fragment">Update our code, add -> commit</li>
               <li class="fragment">Change version in package.json <pre><code class="hljs json">"version": "1.2.4-beta.0"</code></pre></li>
               <li class="fragment">Push our code</li>
-              <li class="fragment">Publish labeled package <pre><code class="hljs html">npm publish --tag beta</code></pre></li>
+              <li class="fragment">Publish labeled package <pre><code class="hljs bash">npm publish --tag beta</code></pre></li>
             </ol>
           </section>
           <section>
@@ -150,10 +156,22 @@
           </section>
         </section>
         <section>
-          <h2>Try our package</h2>
+          <h3>Try our package</h3>
           <ol>
             <li class="fragment">Install from NPM</li>
-            <li class="fragment">Try without install <pre><code class="hljs html">npm link</code></pre></li>
+            <li class="fragment">
+              Without install from NPM
+              <ol>
+                <li class="fragment">
+                  In our lib
+                  <pre><code class="hljs bash">npm link</code></pre>
+                </li>
+                <li class="fragment">
+                  In our app (that will use that lib)
+                  <pre><code class="hljs bash">npm link lib_name</code></pre>
+                </li>
+              </ol>
+            </li>
           </ol>
         </section>
         <section>
