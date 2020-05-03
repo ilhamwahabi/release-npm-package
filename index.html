@@ -68,12 +68,20 @@
         </section>
         <section>
           <section>
-            <h2>Publish Package</h2>
+            <h4>Publish Package</h4>
             <ol>
-              <li class="fragment"><a href="https://github.com/new" target="_blank">Buat Github repo</a>, init local repo <pre><code class="hljs bash">git init</code></pre></li>
-              <li class="fragment">Init project <pre><code class="hljs bash">npm init</code></pre></li>
-              <li class="fragment">Mulai coding, kemudian add -> commit -> push</li>
-              <li class="fragment">Publish package <pre><code class="hljs bash">npm publish</code></pre></li>
+              <li class="fragment"><a href="https://github.com/new" target="_blank">Create Github repo</a>, init local repo <pre><code class="hljs bash">git init</code></pre></li>
+              <li class="fragment">Init project -> code -> add -> commit -> push <pre><code class="hljs bash">npm init</code></pre></li>
+              <li class="fragment">
+                Add tag
+                <pre><code class="hljs bash">
+                  git tag 1.0.0
+                  git push --tags
+                </code></pre>
+              </li>
+              <li class="fragment">
+                Publish package<pre><code class="hljs bash">npm publish</code></pre>
+              </li>
             </ol>
           </section>
           <section>
@@ -106,7 +114,7 @@
             <ol>
               <li class="fragment">Update our code, add -> commit</li>
               <li class="fragment"><a href="#/5/2">Update version</a> <pre><code class="hljs bash">npm version major / minor / patch</code></pre></li>
-              <li class="fragment">Push our code</li>
+              <li class="fragment">Push tags and our code</li>
               <li class="fragment">Publish again <pre><code class="hljs bash">npm publish</code></pre></li>
             </ol>
           </section>
@@ -115,7 +123,8 @@
             <ol>
               <li class="fragment">Update our code, add -> commit</li>
               <li class="fragment">Change version in package.json <pre><code class="hljs json">"version": "1.2.4-beta.0"</code></pre></li>
-              <li class="fragment">Push our code</li>
+              <li class="fragment">Add -> commit, add tag <pre><code class="hljs bash">git tag 1.1.0-beta.0</code></pre></li>
+              <li class="fragment">Push tags and our code</li>
               <li class="fragment">Publish labeled package <pre><code class="hljs bash">npm publish --tag beta</code></pre></li>
             </ol>
           </section>
@@ -184,7 +193,9 @@
           <h2>Complement</h2>
           <ol>
             <li class="fragment">Improve README</li>
-            <li class="fragment">Add License</li>
+            <li class="fragment">
+              <a href="https://choosealicense.com/" target="_blank">Add License</a>
+            </li>
             <li class="fragment">How to Contribute Guide</li>
             <li class="fragment">Add Code of Conduct</li>
           </ol>
