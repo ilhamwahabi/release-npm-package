@@ -2,7 +2,7 @@
   "name": "reveal.js",
   "version": "3.9.2",
   "description": "Slides for ARC weekly webinar 'Into Open Source: Release Your Own NPM Package'",
-  "homepage": "https://iwgx.github.io/release-npm-package/",
+  "homepage": "https://release-npm-package.iwgx.io",
   "main": "js/reveal.js",
   "scripts": {
     "test": "grunt test",
