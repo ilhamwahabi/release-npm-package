@@ -4,8 +4,6 @@
 
 Slides for ARC weekly webinar "Into Open Source: Release Your Own NPM Package" (May 5th, 2020)
 
-Open directly here https://release-npm-package.iwgx.io
-
 Playback here https://www.youtube.com/watch?v=IDj9OsM04NE
 
 ## Usage
